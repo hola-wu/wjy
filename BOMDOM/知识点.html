@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /* 3 */
+        div{
+          color: red;
+        }
+        .div1{
+          color: blue;
+        }
+        #box{
+          color: green;
+        }
+    </style>
+</head>
+<body>
+  <!-- 3 -->
+    <div class="div1" id="box">hello</div>
+    <div>world</div>
+    <div class="div1">你好</div>
+
+    <!-- 4 -->
+    <!-- <div id="box"></div>
+    <div id="box2"><h1>你好</h1></div> -->
+
+    <!-- 5 -->
+    <!-- <div class="box">hello world</div>
+    <div class="box2" style="color:blue">hello world</div> -->
+
+    <!-- 6 -->
+    <!-- <div>hello world</div>
+    <button>按钮</button> -->
+    <script>
+
+      // window.alert("hello");
+      // console.log(window.location);
+      // window.location.href = "https://www.baidu.com"
+      //window.hsitory
+      // window.open
+
+
+      // window.document.write("hello world")
+      // document.write("hello world")
+      // var str = "hello";
+      // str2 = "world"
+      // console.log(window.str2)
+      
+
+      // 3
+      // getElementsByTagName和getElementsByClassName 获取到的是一个集合一个类数组
+      var oDiv = document.getElementsByTagName("div");  //未加ID
+      console.log(oDiv[0]); 
+      var oDiv = document.getElementsByClassName("div1");
+      console.log(oDiv[0]);
+
+      // getElementById 获取到的是一个单个的元素
+      var oDiv = document.getElementById("box");   //加ID
+      console.log(oDiv);
+
+      //4
+      // var oBox = document.getElementById("box");
+      // oBox.innerText = "hello world";
+      // var oBox = document.getElementById("box");
+      // oBox.innerText = "<h1>hello world</h1>";
+      // oBox.innerHTML = "<h1>hello world</h1>";
+
+      // var oBox2 = document.getElementById("box2");
+      // console.log(oBox2.innerText);
+
+      //5-
+        // var oBox = document.getElementsByClassName("box")[0];
+        // var oBox2 = document.getElementsByClassName("box2")[0];
+        // console.log(oBox);
+        // oBox.innerHTML = "你好";
+        // oBox.style.color = "red";
+        // oBox.style.font-size = "20px";
+        // oBox.style.fontSize = "20px";
+        // console.log(oBox2.style.color);
+
+
+
+        //6-
+        // var oDiv = document.getElementsByTagName("div")[0];
+        // var oBtn = document.getElementsByTagName("button")[0];
+        // oBtn.onclick = function(){
+        // console.log("click")
+        // oDiv.style.color = "red";
+        // }
+        // // 事件三要素 事件源 事件处理函数 事件对象
+        // oBtn.oncontextmenu = function(event){
+        // console.log("右键")
+        // console.log(event)
+        // event.preventDefault();//阻止默认行为
+        // }
+        // var rootEl = document.documentElement;
+        // console.log(rootEl);
+        // rootEl.oncontextmenu = function(event){
+        // event.preventDefault()
+        // }
+    </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .nav{
+            background: #333;
+            list-style: none;
+        }
+        .nav-list a{
+            color: #b0b0b0;
+            text-decoration: none;
+            font-size: 12px;
+            /* display: block; */
+            padding: 0 10px;
+        }
+        .nav-list{
+            float: left;
+            height: 40px;
+            line-height: 40px;
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .nav-list1 a{
+            color: #b0b0b0;
+            font-size: 12px;
+            text-decoration: none;
+            padding: 0 10px;
+        }
+        .nav-list1{
+            float: right;
+            height: 40px;
+            line-height: 40px;
+        }
+        .a{
+            background: brown;
+            list-style: none;
+        }
+        .a-1{
+            height: 40px;
+            line-height: 40px;
+            float: left;
+        }
+        .a-2{
+            height: 40px;
+            line-height: 40px;
+            float: right;
+        }
+        .a-1 a{
+            color: burlywood;
+            font-size: 12px;
+            text-decoration: none;
+            padding: 0 10px;
+        }
+        .a-2 a{
+            color: burlywood;
+            font-size: 12px;
+            text-decoration: none;
+            padding: 0 10px;
+        }
+        .clearfix1::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+    <ul class="nav clearfix">
+        <li class="nav-list"><a href=" ">小米商城</a></li>
+        <li class="nav-list"><a href=" ">MIUI</a></li>
+        <li class="nav-list"><a href=" ">IOT</a></li>
+        <li class="nav-list"><a href=" ">云服务</a></li>
+        <li class="nav-list"><a href=" ">金融</a></li>
+        <li class="nav-list"><a href=" ">有品</a></li>
+        <li class="nav-list"><a href=" ">小爱开发平台</a></li>
+        <li class="nav-list"><a href=" ">企业团购</a></li>
+        <li class="nav-list"><a href=" ">资质证照</a></li>
+        <li class="nav-list"><a href=" ">协议规则</a></li>
+        <li class="nav-list"><a href=" ">下载app</a></li>
+        <li class="nav-list"><a href=" ">Select Location</a></li>
+        <li class="nav-list1"><a href=" ">购物车</a></li>
+        <li class="nav-list1"><a href=" ">我的</a></li>
+        <li class="nav-list1"><a href=" ">注册</a></li>
+        <li class="nav-list1"><a href=" ">登录</a></li>
+    </ul>
+   <ul class="a clearfix1">
+       <li class="a-1"><a href=" ">天猫</a></li>
+       <li class="a-1"><a href=" ">淘宝</a></li>
+       <li class="a-1"><a href=" ">京东</a></li>
+       <li class="a-2"><a href=" ">vivo</a></li>
+       <li class="a-2"><a href=" ">oppo</a></li>
+       <li class="a-2"><a href=" ">苹果</a></li>
+       <li class="a-2"><a href=" ">小米</a></li>
+       <li class="a-2"><a href=" ">华为</a></li>
+   </ul>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: brown;
+            /* animation: foo 1s ease; */
+            position: fixed;
+            top: 0;
+            left: 0;
+            animation-name: foo;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            /* 延迟开始 */
+            /* animation-delay: 1s; */
+            /* 循环次数 infinite:无数次*/
+            /* animation-iteration-count: infinite; */
+            /* forwards:停运动结束位置 */
+            animation-fill-mode: forwards;
+        }
+        .box:hover{
+            /* 控制动画暂停 */
+            animation-play-state: paused;
+        }
+        @keyframes foo {
+            /* 0%{
+                top: 0;
+                left: 0;
+            }
+            10%{
+                top: 100px;
+                left: 200px;
+            }
+            30%{
+                top: 50px;
+                left: 300px;
+            }
+            50%{
+                top: 200px;
+                left: 400px;
+            }
+            100%{
+                top: 200px;
+                left: 500px;
+            } */
+
+
+            from{
+                top: 0;
+                left: 0;
+            }
+            to{
+                top: 200px;
+                left: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

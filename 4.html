@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css基本样式、背景、文本、字体、浮动、框（盒）模型</title>
+    <style>
+        #div3{
+            width: 200px;
+            height: 200px;
+            background-color: blanchedalmond;
+            background-image: url(../image/..jpg);
+            background-repeat: no-repeat;
+            background-position: 100px 50px;
+            text-indent: 50px;
+        }
+        #div1{
+            width: 200px;
+            height: 200px;
+            background: brown url(../image/..jpg ) 100px 50px no-repeat;
+            text-align: right;
+            line-height: 40px;
+        }
+        a{
+            text-decoration: none;
+        }
+        #div2{
+            text-decoration: line-through;
+        }
+        #div4{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 35px;
+            font-weight: 900;
+            font-style: italic;
+            color: chocolate;
+        }
+        #div5{
+            width: 200px;
+            height: 200px;
+            background: chocolate 100px 100px;
+            text-align: center;
+            text-decoration: line-through;
+            font: outline;
+            font-size: 12px;
+            font-weight: 200;
+            font-style: italic;
+            color: cornsilk;
+        }
+        #div6{
+            width: 200px;
+            height: 200px;
+            background: red;
+            float: left;
+        }
+        #div7{
+            width: 200px;
+            height: 200px;
+            background: yellow;
+            float: left;
+        }
+        h1{
+            height: 100px;
+            background: black;
+        }
+        /* #div0{ 
+            overflow: hidden; 
+        } */
+        /* #clear{ 
+            clear: both;
+        } */
+        /* #div0::after{ 
+            content: "";
+            display: block;
+            clear: both;
+        } */
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        #div8{
+            width: 200px;
+            height: 200px;
+            background: red;
+            float: right;
+        }
+        #div9{
+            width: 200px;
+            height: 200px;
+            background: rosybrown;
+            float: right;
+        }
+        #div10{
+            width: 200px;
+            height: 200px;
+            background: saddlebrown;
+            border: 10px solid black;
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div3">你好呀</div>
+    <div id="div1">红红火火恍恍惚惚</div>
+    <a href="http://www.baidu.com">百度</a>
+    <div id="div2">哈哈哈哈哈</div>
+    <div id="div4">啊啊啊啊啊啊啊啊</div>
+    <div id="div5">呃呃呃呃呃呃呃呃呃</div>
+    <div id="div0" class="clearfix">
+        <div id="div6">11111</div>
+        <div id="div7">22222</div>
+        <div id="div8">33333</div>
+        <div id="div9">44444</div>
+        <!-- <div id="clear"></div> -->
+    </div>
+    <h1></h1>
+    <div id="div10">0000</div>
+    
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        ul{
+            /* flex:弹性盒模型（布局），flex-direction以主轴row横向，column竖向，后加-reverse倒叙 */
+            display: flex;
+            /* flex-direction: row; */
+            /* flex-wrap: wrap; */
+            height: 400px;
+            /* 多元素移动，在交叉轴上flex-start前，flex-end后，center居中 */
+            /* align-items: center; */
+            /* 各元素间布局，space-around前后距离一样，start、end、center元素一起在主轴上前、后、中心 */
+            /* justify-content: space-around; */
+            /* 多行元素布局 */
+            /* align-content: center; */
+        }
+        ul li{
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            margin: 5px;
+            text-align: center;
+            line-height: 100px;
+            color: white;
+            font-size: 30px;
+            /* 分当前剩余空间*/
+            /* flex-grow: 1; */
+        }
+        ul li:nth-child(3){
+            /* flex-grow: 2; */
+            /* 变换位置 */
+            /* order: -1; */
+            /* 0：不缩小 */
+            /* flex-shrink: 0; */
+            /* 以主轴变大小,会覆盖原来设置的 */
+            flex-basis: 200px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+</html>

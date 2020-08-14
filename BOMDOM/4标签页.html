@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        .page{
+            width: 600px;
+            height: 200px;
+            margin: 100px auto;
+            border: 1px solid black;
+        }
+        .little{
+            height: 50px;
+            background-color: black;
+        }
+        .little ul{
+            list-style: none;
+        }
+        .little li{
+            color: white;
+            float: left;
+            height: 50px;
+            width: 100px;
+            line-height: 50px;
+            text-align: center;
+        }
+        .little .active{
+            background-color: #ddd;
+            color: black;
+        }
+        .list-{
+            display: none;
+        }
+        .list .active{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="little">
+            <ul>
+                <li class="active">第一单元</li>
+                <li >第二单元</li>
+                <li >第三单元</li>
+            </ul>
+        </div>
+        <div class="list">
+            <div class="list- active">
+                <h5>第一单元第一节</h5>
+                <h5>第一单元第二节</h5>
+                <h5>第一单元第三节</h5>
+            </div>
+            <div class="list-">
+                <h5>第二单元第一节</h5>
+                <h5>第二单元第二节</h5>
+                <h5>第二单元第三节</h5>
+            </div>
+            <div class="list-">
+                <h5>第三单元第一节</h5>
+                <h5>第三单元第二节</h5>
+                <h5>第三单元第三节</h5>
+            </div>
+        </div>
+    </div>
+    <script>
+        var aLi = document.getElementsByTagName("li");
+        var aContent = document.getElementsByClassName("list-");
+        for(var i=0;i<aLi.length;i++){
+            aLi[i].index = i;
+            aLi[i].onmousemove = function(){
+                for(var j=0;j<aLi.length;j++){
+                    aLi[j].setAttribute("class","");
+                    aContent[j].setAttribute("class","list-");
+                }
+                this.setAttribute("class","active");
+                aContent[this.index].setAttribute("class","list- active");
+            }
+        }
+    </script>
+</body>
+</html>

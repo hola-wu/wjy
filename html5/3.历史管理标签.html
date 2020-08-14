@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            width: 400px;
+            height: 50px;
+            background-color: black;
+            margin: 100px auto;
+            display: flex;
+            align-content: center;
+        }
+        li{
+            list-style: none;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            flex-grow: 1;
+        }
+        .active{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="active">one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+    <script>
+        var oLi = document.getElementsByTagName("li");
+        for(var i=0;i<oLi.length;i++){
+            oLi[i].onclick = function(){
+                var _text = this.innerText;
+                location.hash = _text;
+                for(var j=0;j<oLi.length;j++){
+                    oLi[j].className = "";
+                }
+                this.className = "active";
+            }
+        }
+        window.onhashchange = function(){
+            var _hash = location.hash.slice(1);
+            console.log(_hash);
+            for(var i=0;i<oLi.length;i++){
+               if(oLi[i].innerText == _hash){
+                   oLi[i].className = "active";
+               }else{
+                   oLi[i].className = "";
+               }
+            }
+        }
+    </script>
+</body>
+</html>

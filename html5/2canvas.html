@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #can{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="can" width="400" height="300"></canvas>
+    <script>
+        var oCan = document.getElementById("can");
+        var canContext = oCan.getContext("2d");
+        // 绘线颜色
+        canContext.strokeStyle = "red";
+        // 绘线宽度
+        canContext.lineWidth = 5;
+        canContext.beginPath();
+        // 绘线起点
+        canContext.moveTo(10,10);
+        // 绘线终点
+        canContext.lineTo(100,100);
+        canContext.stroke();
+    </script>
+</body>
+</html>

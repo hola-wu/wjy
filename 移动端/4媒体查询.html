@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 500px;
+            height: 500px;
+            background-color: brown;
+        }
+        /* 最大宽度小于500变色 */
+        /* @media(max-width: 500px){
+            .box{
+                background-color: burlywood;
+            }
+        } */
+        /* 最大宽度在300-500之间变色 */
+        /* @media(max-width: 500px) and (min-width: 300px){
+            .box{
+                background-color: burlywood;
+            }
+        } */
+
+        /* 横竖屏 */
+        @media (orientation: portrait){
+            .box{
+                background-color: burlywood;
+            }
+        }
+        @media (orientation: landscape){
+            .box{
+                background-color: rebeccapurple
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

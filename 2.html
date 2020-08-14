@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+    <style>
+        input{
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="http://www.wjy.com">
+        <div style="height:30px">
+            <label for="username">用户名：</label>
+            <input id="username" type="text">
+        </div>
+
+        <div style="height:30px">
+            <label for="password">密码：</label>
+            <input id="password" type="password">
+        </div>
+        <div style="height:30px">
+            学校：
+            <select>
+                <option value="">黑龙江大学</option>
+                <option value="">哈尔滨理工大学</option>
+                <option value="">哈尔滨医科大学</option>
+            </select>
+        </div>
+        <div style="height:30px">
+            性别：
+            <input type="radio" name ="sex">男
+            <input type="radio" name ="sex">女
+        </div>
+        <div style="height:30px">
+            爱好：
+            <input type="checkbox" name="hobby">看剧
+            <input type="checkbox" name="hobby">听歌
+            <input type="checkbox" name="hobby">玩乐器
+            <input type="checkbox" name="hobby">看书
+            <input type="checkbox" name="hobby">学习
+            <input type="checkbox" name="hobby">敲代码
+        </div>
+        <div style="height:100px">
+            备注：
+            <textarea name="beizhu"></textarea>
+        </div>
+
+        <div style="height:50px">
+            <button>按钮</button>
+            <input type="submit" value="提交按钮">
+        </div>
+    </from>
+
+    <table border="1" cellspacing="0px">
+        <tr>
+            <td>姓名</td>
+            <td>年龄</td>
+            <td>性别</td>
+            <td>学校</td>
+            <td>学院</td>
+            <td>专业</td>
+            <td>职务</td>
+            
+        </tr>
+        <tr>
+            <td>邬</td>
+            <td>20</td>
+            <td>女</td>
+            <td>黑龙江大学</td>
+            <td>计软学院</td>
+            <td>物联网</td>
+            <td>无</td>
+        </tr>
+        <tr>
+            <td>肖</td>
+            <td>28</td>
+            <td>男</td>
+            <td>黑龙江大学</td>
+            <td>计软学院</td>
+            <td>物联网</td>
+            <td>无</td>
+        </tr>
+        <tr>
+            <td>Allen</td>
+            <td>31</td>
+            <td>男</td>
+            <td>黑龙江大学</td>
+            <td>艺术学院</td>
+            <td>舞蹈</td>
+            <td>无</td>
+        </tr>
+        <tr>
+            <td>谭</td>
+            <td>30</td>
+            <td>女</td>
+            <td>黑龙江大学</td>
+            <td>艺术学院</td>
+            <td>歌唱</td>
+            <td>无</td>
+        </tr>
+    </table>
+</body>
+</html>

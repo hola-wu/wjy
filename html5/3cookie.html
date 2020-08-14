@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var timer = new Date();
+        timer.setDate(timer.getDate()+1);
+        // 会覆盖同名的数据
+        // document.cookie = "username=vip1;expires="+timer.toUTCString();
+        document.cookie = "useragr=18;expires="+timer.toUTCString();
+        // 只要不失效都会获取到
+        console.log(document.cookie);
+        var arr = document.cookie.split(";");
+        // trim去掉字符串前后空格
+        console.log(arr[1].trim());
+    </script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>小米登录界面</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <style>
+        body {
+            font-size: 14px;
+            font-family: Helvetica,arial,"Hiragino Sans GB","PingFang SC","Microsoft YaHei","微軟正黑體","儷黑 Pro",sans-serif;
+        }
+        .header .h-logo{
+            width: 200px;
+            height: 98px;
+            background-image: url("file://E:/GitHub/image/3h.png");
+        }
+        .content{
+            height: 588px;
+            width: 100%;
+            overflow: hidden;
+            background-image: url("file://E:/GitHub/image/3c.jpg");
+            background-position: top center;
+        }
+        .content .main-content{
+            height: 588px;
+            margin-top:30px;
+        }
+        .content .login-box{
+            width: 410px;
+            height: 566px;
+            background-color: white;
+            margin-left: auto;
+            margin-right: 0;
+        }
+        .content .login-box .nav-tabs{
+            padding: 27px 0 24px;
+            text-align: center;
+            font-size: 24px;
+            color: #666;
+        }
+        .content .nav-tabs a{
+            color: #666;
+        }
+        .content .nav-tabs a.active{
+            color: #f56600;
+        }
+        .content .nav-tabs a:hover{
+            color: #f56600;
+        }
+        .content .nav-tabs span{
+            width: 1px;
+            height: 24px;
+            margin: 0 35px 0 31px;
+            border:1px solid #e0e0e0;
+        }
+        .content .form-content input{
+            width: 312px;
+            height: 18px;
+            line-height: 22px;
+            padding: 13px 16px 13px 14px;
+            outline: none;
+            display: block;
+            margin-bottom: 18px;
+            margin-left: 32px;
+            font-family: arial,"Hiragino Sans GB","Microsoft YaHei",sans-serif;
+            border: 1px solid #e0e0e0;
+        }
+        .content .login-info input{
+            width: 348px;
+            height: 50px;
+            line-height: 25px;
+            background: #ff6700;
+            margin-top: 24px;
+            margin-left: 32px;
+            display: block;
+            font-family: arial,"Hiragino Sans GB","Microsoft YaHei",sans-serif;
+            color: #fff;
+            border: 0 none;
+        }
+        .content .login-info input:hover{
+            cursor: pointer;
+        }
+        input::-webkit-input-placeholder{
+            color: #b0b0b0;
+            opacity:1;
+        }
+        .content .li-top{
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 25px;
+        }
+        .content .li-top span{
+            color: #ff6700;
+        }
+        .content .li-bottom{
+            text-align: center;
+        }
+        .content .li-bottom a{
+            color: #999;
+        }
+        .content .other-login fieldset{
+            border-width: 1px 0 0 0 ;
+            border-color: #b0b0b0;
+            border-style: solid;
+            text-align: center;
+            margin-top: 140px;
+        } 
+        .content .ol-icon ul{
+            margin-top: 20px;
+            padding: 0 75px;
+        }
+        .content .ol-icon li{
+            float: left;
+            width: 30px;
+            height: 30px;
+            background: #0288d1;
+            border-radius: 50%;
+            margin: 0 17px;
+        }
+        .content .ol-icon .sina{
+            background-color: #d32f2f;
+        }
+        .content .ol-icon .alpay{
+            background-color: #0ae;
+        }
+        .content .ol-icon .wechat {
+            background-color: #00d20d;
+        }
+        .content .ol-icon i{
+            background-image: url("file://E:/GitHub/image/icons_type.png");
+            width: 18px;
+            height: 18px;
+            display: block;
+            margin: 4px auto 0;
+        }
+        .content .qq i{
+            background-position: -19px 0;
+        }
+        .content .sina i {
+            background-position: -38px 0;
+        }
+
+        .content .alpay i {
+            background-position: -57px 0;
+            width: 25px;
+        }
+
+        .content .wechat i {
+            background-position: -83px 0;
+            width: 24px;
+        }
+        .footer{
+            text-align: center;
+            margin: 100px;
+        }
+        .footer .lang-select-list li{
+            display: inline-block;
+        }
+        .footer .lang-select-list a{
+            color: #333;
+        }
+        .footer .nf-intro{
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+     <div class="container" style="height: 1000px;">
+         <div class="header wrapper1">
+            <div class="h-logo"></div>
+         </div>
+         <div class="content">
+            <div class="main-content wrapper1">
+                <div class="login-box">
+                    <div class="nav-tabs">
+                        <a class="active" href="javascript:void(0);">帐号登录</a>
+                        <span></span>
+                        <a href="javascript:void(0);">扫码登录</a>
+                    </div>
+                    <div class="form-content">
+                        <input type="text" placeholder="邮箱/手机号码/小米ID">
+                        <input type="password" placeholder="密码">
+                    </div>  
+                    <div class="login-info">
+                        <input type="button" value="登录">
+                        <div class=li-top>
+                            <span>手机短信登录/注册</span>
+                        </div>
+                        <div class="li-bottom">
+                            <a href="javascript:void(0);">立即注册</a>
+                            <span style="color: #999;">|</span>
+                            <a href="javascript:viod(0);">忘记密码？</a>
+                        </div>
+                    </div>
+                    <div class="other-login">
+                        <fieldset>
+                            <legend style="color: #b0b0b0;">其他方式登录</legend>
+                        </fieldset>
+                        <div class="ol-icon">
+                            <ul>
+                                <li class="qq">
+                                    <i></i>
+                                </li>
+                                <li class="sina">
+                                    <i></i>
+                                </li>
+                                <li class="alpay">
+                                    <i></i>
+                                </li>
+                                <li class="wechat">
+                                    <i></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+         <div class="footer">
+             <div class="lang-select-list">
+                 <ul>
+                     <li>
+                        <a href="javacript:void(0);">简体</a>
+                        ｜
+                     </li>
+                     <li>
+                        <a href="javacript:void(0);">繁体</a>
+                        ｜
+                      </li>
+                      <li>
+                        <a href="javacript:void(0);">English</a>
+                        ｜
+                      </li>
+                      <li>
+                        <a href="javacript:void(0);">常见问题</a>
+                        ｜
+                      </li>
+                      <li>
+                        <a href="javacript:void(0);">隐私政策</a>
+                      </li>
+                 </ul>
+             </div>
+             <div class="nf-intro">
+                小米公司版权所有-京ICP备10046444-<img src="file://E:/GitHub/image/ghs.png">京公网安备11010802020134号-京ICP证110507号
+             </div>
+         </div>
+     </div>
+    
+</body>
+</html>

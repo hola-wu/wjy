@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // var a = "hello world";
+        // alert(a)
+        // document.write(a);
+        // console.log(a)
+
+        // 变量名：数字、字母、_(下划线)、$
+        // 注意：数字不能开头、严格区分大小写、不能使用关键字保留字
+        // var a = "123";
+        // var A = "456";
+        // 变量名中出现多个单词的，一般习惯使用驼峰命名
+        // var testStrArr = "789"; 
+        
+        // 基本数据类型：String(字符型)、Number(数值型)、Boolean(布尔)、Undefined,null
+        // var str = "hello";
+        // var str2 = 'hello';
+        // var num = 10;
+        // var num2 = '10';
+        // var boo = true;//false;
+        // var und = undefined;
+        // var nul = null;
+
+        // console.log(typeof(boo))
+
+        // var a = 10;
+        // console.log(typeof(a));
+        // a = "hello";
+        // console.log(typeof(a));
+
+        // var 允许重复定义
+        // var a = 10;
+        // var a = 'hello';
+        // console.log(a);
+
+        // var a;
+        // console.log(a);
+
+        // var a = 10,b = 20;
+        // console.log(a,b)
+
+
+        // 加号（+）除了可以实现数学运算 还可以实现字符串拼接
+        // var a = "a";
+        // var b = 20;
+        // console.log( typeof(a+b) );//隐式类型转换 String
+
+        // var a = "10";
+        // var b = 20;
+        // console.log(b-a);//隐式类型转换 Number
+        // console.log(b*a)
+        // console.log(b/a)
+        // console.log(b%a)
+
+        // var a = "hello";
+        // var b = 10;
+        // console.log(a*b);
+
+        // 加号实现字符串拼接
+        // var str = "hello world";
+        // console.log("?"+str+"!")
+        // document.write("<h1>"+str+"</h1>")
+        // document.write("<h1 class='active'>hello</h1>")
+        // document.write('<h1 class="active">hello</h1>')
+        // document.write('<h1 class="active">'+str+'</h1>')
+
+        // var a = 0.1;
+        // var b = 0.2;
+        // console.log(a+b);
+
+        // var a = 10;
+        // a = a + 1; a += 1;
+
+        // ++a ;a++; a = a + 1;
+
+        // var a = 10;
+        // // var b = ++a;
+        // var b = a++;
+        // console.log(b);
+
+
+        // var a = 120;
+        // var b = 20;
+        // if(a>b){
+        //   console.log("a大于b");
+        // }else if(a<b){
+        //   console.log("a小于b");
+        // }else{
+        //   console.log("a等于b");
+        // }
+
+        // var a = false;
+        // if(a){
+        //   console.log("a为真")
+        // }else{
+        //   console.log("a为假")
+        // }  
+
+        //如果判断数字型真假 0为假 除了0其他数值都为真
+        // var a = 0;
+        // if(a){
+        //   console.log("a为真")
+        // }else{
+        //   console.log("a为假")
+        // }  
+
+        //如果判断字符型真假 ""(空字符串)为假 除了空字符串其他都为真
+        // var a = "";
+        // if(a){
+        //   console.log("a为真")
+        // }else{
+        //   console.log("a为假")
+        // }  
+
+        //undefined 、null 都为假
+        // var a = undefined;
+        // if(a){
+        //   console.log("a为真")
+        // }else{
+        //   console.log("a为假")
+        // }  
+
+        // var a = 100;
+        // var b = 10;
+        // var c = 30;
+        // if(c>b || b>a){
+        //   console.log("真")
+        // }else{
+        //   console.log("假")
+        // }
+
+        // if(c>b && b>a){
+        //   console.log("真")
+        // }else{
+        //   console.log("假")
+        // }
+
+        // if(!a>b){
+        //   console.log("真")
+        // }else{
+        //   console.log("假")
+        // }
+
+        // var a = "10";
+        // var b = 10;
+        // if(a == b){
+        //   console.log("a等于b");
+        // }else if(a != b){
+        //   console.log("a不等于b");
+        // }
+        // == 会进行隐式类型转化类型不同也可以  === 严格匹配判断类型是否相等 
+        // if(a === b){
+        //   console.log("a等于b");
+        // }else{
+        //   console.log("a不等于b");
+        // }
+
+
+        // a 和 b 中有一个为0 另一个不为零 想让c等于不为零的值
+        // var a = 10;
+        // var b = 0;
+        // var c;
+        //方法一
+        // if(a == 0){
+        //   c = b
+        // }else {
+        //   c = a
+        // }
+        //方法二 
+        // c = a==0?b:a;  // (? :)三元运算符
+        //方法三
+        // c = b||a;
+
+        // console.log(c);
+
+
+        // var a = 10;
+        // if(a==1){
+
+        // }else if(a==2){
+
+        // }else if(a==3){
+
+        // }else{
+
+        // }
+
+        // switch(a){
+        //   case 1:console.log("a为1");break;
+        //   case 2:console.log("a为2");break;
+        //   case 3+7:console.log("a为3");break;
+        //   default:console.log("a为其他值");
+        // }
+
+
+        // var arr = [1,2,3,4,5];
+        // var arr = [1,2,3,4,5,[6,7,8,9]];
+        // var arr = ['a',1,true,undefined,[12,3]]
+        // console.log(arr);
+
+        // var a = [1,2,3];
+        // var b = a;
+        // a[0] = 'a'
+        // console.log(b);
+
+        // var a = [];
+        // var b = [];
+        // if(a==b){
+        //   console.log("a=b")
+        // }else{
+        //   console.log("a!=b");
+        // }
+
+        // var a = [1,2,3];
+        // var b = a[0];
+        // a[0] = "a";
+        // console.log(b);
+
+        // Object 对象
+        // var person = {
+        //   name:"小明",
+        //   age:18,
+        //   parent:{
+        //     name:"xxx",
+        //     age:"40"
+        //   }
+        // }
+        // var person2 = person;
+        // person.age = 19;
+        // console.log(person2.age);
+        
+        // var person = {
+        //   name:"小明",//属性
+        //   sayHello:function(a){//方法
+        //     console.log("hello"+a);
+        //   }
+        // }
+        // person.sayHello("小刚");
+
+        // Function 函数
+
+        // function foo(a,b){
+        //   // console.log(a+b);
+        //   return (1+2)
+        // }
+
+        // var num = foo(1,2);
+        // console.log(num);
+
+        // var foo = function(a,b){
+        //   console.log(a+b);
+        // }
+
+        // foo(1,2);
+
+        // 局部变量：函数内部声明的变量为局部变量
+        // 全局变量：函数外部声明的变量为全局变量
+        // function foo(){
+        //   var a = 10;//函数内部定义的变量为局部变量，仅在函数内部生效
+        // }
+        // foo();
+        // console.log(a);
+
+        // function foo(){
+        //   a = 10; //隐式声明为全局变量
+        // }
+        // foo()
+        // console.log(a);
+
+        // function foo(){
+        //   var a = 10;
+        //   return a;
+        //   console.log(a);
+        // }
+        // foo();
+
+        // function foo(a,b,c,d){
+        //   console.log(a,b,c,d);
+        // }
+
+        // foo(1,2);
+
+
+        // var arr = [1,2,3,4,5,6];
+        // var sum = 0;
+        // for(var i = 0;i<arr.length;i++){
+        //   console.log(arr[i])
+        // }
+
+        // var str = "hello";
+        // for(var i = 0;i<5;i++){
+        //   console.log(str[i])
+        // }
+        // var i = 0;
+        // while(i<arr.length){
+        //   console.log(arr[i])
+        //   i++;
+        // }
+
+        // var i = 100;
+        // do {
+        //   console.log(arr[i])
+        //   i++;
+        // } while (i<arr.length);
+
+
+        // var str = "hello";
+        // var str2 = "2020-07-29";
+        // console.log(str[1]);
+        // console.log(str.charAt(1))
+        // console.log(str.indexOf("s"));
+        // console.log(str.replace("ll","aa"));
+        // console.log(str.slice(1,3));
+        // console.log(str.slice(1));
+        // console.log(str2.split("-"));
+        // console.log(str.substr(1,2));
+        // console.log(str.substring(1));
+
+        // var arr = [1,2,3,4,5];
+        // var arr2 = [6,7,8,9];
+        // arr[5] = 6;
+
+        // arr.push("a")  //尾添加并显示新数组
+        // console.log(arr);
+
+        // arr.concat(arr2)
+        // console.log(arr,arr2)  //拼接数组
+        // console.log(arr.join("-"));  //字符间添加-（-可为任何）
+
+        // arr.pop()      //尾删除但只显示删除的那个
+        // console.log(arr);
+
+        // console.log(arr.reverse());
+
+        // console.log(arr.slice(1,3)) //只是获取，并不改变原数组
+
+        // arr.splice(1,3,"a","b")  //截取并改变原数组（即可删除又可添加）
+        // console.log(arr);
+
+        // var str = "10"*1;
+        // var str = "10.1";
+        // str = parseInt(str);  //整形
+        // str = parseFloat(str);  //浮点型
+        // var a = 1+str;
+        // console.log(a);
+
+        // var num = 10.3678;
+        // console.log(Math.ceil(num));  //后面全进
+        // console.log(Math.floor(num)); //后面全舍
+        // console.log(Math.round(num)); //四舍五入
+
+        // console.log(Math.random());  //0-1
+
+        // 生成1-10随机数字
+        // console.log(Math.random()*9+1);  
+        // console.log(Math.ceil(Math.random()*10));
+        // console.log(Math.floor(Math.random()*10)+1);
+        
+        // 生成 0-5随机数字
+        // console.log(Math.random()*5);    
+        // console.log(Math.floor(Math.random()*6));
+        // 生成 5-10随机数字
+        // console.log(Math.random()*5+5);  
+        // console.log(Math.floor(Math.random()*6)+5);
+
+        // var timer = new Date();
+        // let timerArr = [];
+        // timerArr.push(timer.getFullYear());
+        // timerArr.push(timer.getMonth()+1);
+        // timerArr.push(timer.getDate());
+        // console.log(timerArr.join("-"));
+        // console.log(timer.getDay());
+        // console.log(timer.getHours());
+        // console.log(timer.getMinutes());
+
+
+        // var a = 10;
+        // var b = 0b 开头表示二进制
+        // 0开头 或者 0O开头表示八进制数字
+        // 0x表示十六进制
+        // console.log( a.toString("16") ) //转换为十六进制
+        // console.log( a.toString("8") ) //转换为八进制
+
+        // var x = Math.random();
+        // var y = Math.random();
+        // var z = x>y?x:y;
+        // console.log(x);
+        // console.log(y);
+        // console.log(z);
+
+        // var timer = new Date();
+        // var year = timer.getFullYear();
+        // if(year%4==0&&year%100!=0 || year%400==0){
+        //     console.log("是闰年");
+        // }else{
+        //     console.log("不是闰年");
+        // }
+        
+        // var x = window.prompt("请输入数字");
+        // if(x<14)
+        // {
+        //     console.log("儿童");
+        // }else if(x>=14&&x<24){
+        //     console.log("青少年");
+        // }else if(x>=24&&x<40){
+        //     console.log("青年");
+        // }else if(x>=40&&x<60){
+        //     console.log("中年");
+        // }else{
+        //     console.log("老年");
+        // }
+
+        // var x = window.prompt("请输入0~6（对应星期日~六）")//输入的是字符形式
+        // switch(x){
+        //     case '0':console.log("星期日");break;
+        //     case '1':console.log("星期一");break;
+        //     case '2':console.log("星期二");break;
+        //     case '3':console.log("星期三");break;
+        //     case '4':console.log("星期四");break;
+        //     case '5':console.log("星期五");break;
+        //     case '6':console.log("星期六");break;
+        //     default:console.log("输入有误");
+        // }
+
+        // var sum = 1;
+        // for(var i = 1;i<=10;i++){
+        //     sum *=i;
+        // }
+        // console.log(sum);
+
+        // var jc = 1;
+        // var sum = 0;
+        // for(var i=1;i<=10;i++){
+        //     for(var j=1;j<=i;j++){
+        //         jc *=j;
+        //     }
+        //     sum +=jc;
+        //     jc = 1;
+        // }
+        // console.log(sum);
+
+        // for(var i=1;i<=5;i++){
+        //     for(var j=1;j<=i;j++){
+        //         document.write(j);
+        //         document.write("&nbsp;");//&nbsp;代空格
+        //     }
+        //     document.write("<br/>");//<br/>代换行
+        // }
+
+        // for(var i=100;i<1000;i++){
+        //     if(i%4==2 && i%7==3 && i%9==5){
+        //         console.log(i);
+        //     }
+        // }
+
+
+        // function f(x){
+        //     var sum = 0;
+        //     sum = 4*x*x+3*x+2;
+        //     console.log(sum);
+        // }
+        // var x = window.prompt("请输入数值");
+        // f(x);
+
+
+        // function Min(x,y){
+        //     console.log(x<y?x:y);
+        // }
+        // var x = window.prompt("请输入x");
+        // var y = window.prompt("请输入y");
+        // Min(x,y);
+
+        // var x = window.prompt("请输入x");
+        // var y = window.prompt("请输入y");
+        // console.log(Math.min(x,y));
+        // console.log (x<y?x:y);
+
+
+        // var arr = [];
+        // for(var i=1;i<1000;i++){
+        //     if(i%3==0 && i%5==0 && i%7==0){
+        //         // document.write(i);
+        //         // document.write("&nbsp;"); //无法实现6个换行
+        //         arr.push(i);
+        //     }
+        // }
+        // for(var j=0;j<arr.length;j++){
+        //     document.write(arr[j]);
+        //     document.write("&nbsp;");
+        //     if((j+1)%6==0){
+        //         document.write("<br/>");
+        //     }
+        // }
+
+
+        // var a = 1;           //非递归
+        // var b = 1;
+        // var sum = 1;
+        // var n = window.prompt("请输入第几项");
+        // if(n==1||n==2){
+        //     console.log(sum);
+        // }else{
+        //     for(var i=3;i<=n;i++){
+        //         sum=a+b;
+        //         a=b;
+        //         b=sum;
+        //     }
+        //     console .log(sum);
+        // }
+
+        // function f(i){       //递归
+        //     if(i<3){
+        //         return 1;
+        //     }else{
+        //         return f(i-1)+f(i-2);
+        //     }
+        // }
+        // var i = window.prompt("请输入第几项")
+        // // sum = f(i);
+        // // console.log(sum);
+        // console.log(f(i));
+
+
+        // var isGoOn = true;
+        // var win = 0;
+        // var count = 0;
+        // while(isGoOn){
+        //     count++;
+        //     var a = Math.floor(Math.random()*8)+1;
+        //     var b = Math.floor(Math.random()*8)+1;
+        //     var c = Math.floor(Math.random()*8)+1; 
+        //     if(a==8 || b==8 || c==8){
+        //     win++
+        //     }
+        //     isGoOn = window.confirm("是否继续？");
+        //     console.log(win/count);
+        // }
+
+
+        // var str = ("1abc23def4");
+        // str = str.split("");
+        // var result = "";
+        // for(var i=0;i<str.length;i++){
+        //     if(str[i]>="0" &&str[i]<="9"){
+        //         result += str[i];
+        //     }
+        // }
+        // console.log(result);
+
+
+
+        // function ranFood(){
+        //     var ranNum = Math.floor(Math.random()*10);
+        //     var _foodName = "";
+        //     switch(ranNum){
+        //         case 0:_foodName = "粥";break;
+        //         case 1:_foodName = "包子";break;
+        //         case 2:_foodName = "豆浆";break;
+        //         case 3:_foodName = "饼";break;
+        //         case 4:_foodName = "汤";break;
+        //         case 5:_foodName = "蔬菜";break;
+        //         case 6:_foodName = "水果";break;
+        //         case 7:_foodName = "沙拉";break;
+        //         case 8:_foodName = "牛肉";break;
+        //         case 9:_foodName = "鸡肉";break;
+        //     }
+        //     return _foodName;
+        // }
+        // var isGoOn = window.confirm("是否需要点餐？");
+        // if(isGoOn){
+        //     var personNum = window.prompt("几个人用餐？");
+        //     personNum = parseInt(personNum);
+        //     var personName = [];
+        //     var resultArr = [];
+        //     for(var i=0;i<personNum;i++){
+        //         var _thisName = window.prompt("第"+(i+1)+"个人叫什么?");
+        //         personName.push(_thisName);
+        //     }
+        //     for(var j=0;j<personNum;j++){
+        //         resultArr.push(personName[j]+"吃"+ranFood());
+        //     }
+        //     console.log(resultArr);
+        // }else{
+        //     alert("取消了");
+        // }
+
+
+
+    </script>
+</body>
+</html>
